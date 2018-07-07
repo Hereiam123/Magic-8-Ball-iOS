@@ -33,7 +33,7 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="askButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z8w-9b-aIQ"/>
+                                    <action selector="askButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2QG-Oz-Zxe"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rcd-LH-783">
@@ -45,7 +45,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="askButtonPressed" destination="zvH-4f-dEJ" id="UgD-gp-ROC"/>
                         <outlet property="imageView" destination="rcd-LH-783" id="SZ1-CQ-vUv"/>
                     </connections>
                 </viewController>

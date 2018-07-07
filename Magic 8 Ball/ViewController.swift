@@ -20,17 +20,26 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        randomBallNumber = Int(arc4random_uniform(4))
+        randomBallImage()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    @IBAction func askButtonPressed(_ sender: Any) {
-        
+    
+    @IBAction func askButtonPressed(_ sender: UIButton) {
+        randomBallImage()
     }
     
+    func randomBallImage(){
+        randomBallNumber = Int(arc4random_uniform(4))
+        
+        imageView.image = UIImage(named: ballArray[randomBallNumber])
+    }
+    
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        randomBallImage()
+    }
 }
 
